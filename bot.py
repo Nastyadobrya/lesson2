@@ -8,7 +8,6 @@ def main():
     updater = Updater("382759234:AAHa38exQk8Ky0q2jjm6AjTHE0tYvcCOSFk")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
-    dp.add_handler(CommandHandler("planet", planet_user))
     dp.add_handler(MessageHandler(Filters.text, talk_to_me))
     updater.start_polling()
     updater.idle()
