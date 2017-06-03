@@ -16,13 +16,6 @@ def greet_user(bot, update):
     text = 'Вы запустили своего виртуального друга нажатием на клавишу start'
     print(text)
     update.message.reply_text(text)
-def planet_user(bot, update):
-    text = 'Напишите название планеты на английском'
-    print(text)
-    update.message.reply_text(text)
-def planet_name(bot, update):
-    user_text = update.message.text 
-    return user_text.ephem.constellation()
 def talk_to_me(bot, update):
     user_text = update.message.text 
     print(user_text)
@@ -30,5 +23,3 @@ def talk_to_me(bot, update):
 main()       
 greet_user()
 talk_to_me()
-planet_user()
-print(planet_name())
